@@ -672,6 +672,10 @@ section {
   line-height: 1.4;
 }
 
+.about__img {
+  margin-top: 60px;
+}
+
 /* End About */
 
 /* About slideshow */
