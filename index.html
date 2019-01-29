@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Портфолио</title>
+  <link rel="shortcut icon" href="./images/dist/world.png" type="image/png">
+  <script src="https://use.fontawesome.com/715fa6df7e.js"></script>
+  <link rel="stylesheet" href="./styles/dest/style.css">
+</head>
+<body>
+  <header class="header dotted-pattern">
+    <div class="wrapper flex-block">
+      <a href="" class="logo" aria-label="Ссылка на главную страницу">
+        <img src="images/dist/world.png" width="50" height="50" alt="Логотип">
+      </a>
+      <nav class="nav flex-block">
+        <a href="#about" class="nav-item">Обо мне</a>
+        <a href="#skills" class="nav-item">Навыки</a>
+        <a href="#portfolio" class="nav-item">Работы</a>
+      </nav>
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-text__title">Я <i class="fa fa-heart" aria-label="люблю"></i> верстку!</h1>
+      <p class="hero-text__description">Любовь к своему делу помогает мне выполнять работу хорошо, с вниманием к деталям.</p>
+    </div>
+    <div class="scroll">
+      <a href="#about" aria-label="Переход к блоку Обо мне">
+        <span class="scroll__circle">
+          <i class="scroll__icon fa fa-arrow-down"></i>
+        </span>
+        <span class="scroll__pulse"></span>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="about diagonal-pattern">
+      <a id="about" aria-hidden="true"></a>
+      <div class="wrapper">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-block flex-block">
+          <div class="about-block__text">
+            <p>Привет!</p>
+            <p>Меня зовут Дмитрий Талицких. Я — верстальщик.</p>
+            <p>Я живу в Калининграде, и здесь не так много вакансий на позицию верстальщика. Поэтому я ищу <b>удалённую работу</b>.</p>
+            <p>Прежняя сфера моей деятельности - техническая эксплуатация автомобилей.</p>
+            <p>2 года назад я решил изменить свою жизнь и занялся изучением вёрстки и frontend разработки.</p>
+            <p>Последний год я активно практиковался в HTML Academy. За это время я научился уверенно обращаться с HTML5 и CSS3, препроцессором Less, а также освоил JavaScript на базовом уровне.</p>
+            <p>Серьёзно отношусь к дедлайнам. С пониманием отношусь к авралам, но долгая работа в постоянном напряжении не идет мне на пользу (с кем то бывает иначе?).</p>
+          </div>
+          <svg class="about-block__animation" width="600" height="450">
+            <rect width="100%" height="100%" fill="yellowgreen"></rect>
+            <rect class="keyboard" width="350" height="120" x="125" y="300" fill="black"></rect>
+          </svg>
+          <!-- <div class="about-text__slider">
+            <svg class="about-block__animation" width="600" height="450">
+              <rect width="100%" height="100%" fill="yellowgreen"></rect>
+              <rect class="keyboard" width="350" height="120" x="125" y="300" fill="black"></rect>
+            </svg>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <a id="skills" aria-hidden="true"></a>
+      <div class="wrapper">
+        <h2 class="section-title">Навыки</h2>
+        <div class="skills-block">
+          <div class="skills-block__item">
+            <div class="skill-text">HTML/CSS</div>
+            <div class="skill-progressbar html" data-percent="90%" aria-label="90%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">Адаптивная верстка</div>
+            <div class="skill-progressbar adaptive" data-percent="70%" aria-label="70%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">Доступность</div>
+            <div class="skill-progressbar a11y" data-percent="45%" aria-label="45%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">Less</div>
+            <div class="skill-progressbar sass" data-percent="65%" aria-label="65%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">Git</div>
+            <div class="skill-progressbar git" data-percent="75%" aria-label="75%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">Gulp</div>
+            <div class="skill-progressbar grunt" data-percent="50%" aria-label="50%"></div>
+          </div>
+          <div class="skills-block__item">
+            <div class="skill-text">JavaScript</div>
+            <div class="skill-progressbar js" data-percent="30%" aria-label="30%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio waves-pattern">
+      <a id="portfolio" aria-hidden="true"></a>
+      <h2 class="section-title">Работы</h2>
+      <div class="portfolio-block">
+        <a href="http://epic.spb.ru/fe/code/index.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/fe@1x.png 600w,
+                         ./images/dist/fe@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+              src="./images/dist/fe@2x.png" alt="Посадочная страница Fe" class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Посадочная страница Fe
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/olivia/index.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/olivia@1x.png 600w,
+                         ./images/dist/olivia@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/olivia@2x.png" alt="Посадочная страница Olivia" class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Посадочная страница Olivia
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://solarrust.github.io/JS-landing/" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/js@1x.png 600w,
+                         ./images/dist/js@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/js@2x.png"
+                  alt="Посадочная страница для курса по JavaScript"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Посадочная страница для курса по JavaScript
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://composer.epic.spb.ru/index.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/composer@1x.png 600w,
+                         ./images/dist/composer@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/composer@2x.png"
+                  alt="Сайт-визитка для знакомого композитора"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Сайт-визитка для знакомого композитора
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/kuvalda/pages/main-page/index.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/kuvalda_main-page@1x.png 600w,
+                         ./images/dist/kuvalda_main-page@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/kuvalda_main-page@2x.png"
+                  alt="Новый дизайн главной страницы интернет-магазина Кувалда"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Новый дизайн главной страницы интернет-магазина Кувалда
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/kuvalda/pages/index.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/kuvalda_faq@1x.png 600w,
+                         ./images/dist/kuvalda_faq@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/kuvalda_faq@2x.png"
+                  alt="Главная страница FAQ, интернет-магазин Кувалда"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Главная страница FAQ, интернет-магазин Кувалда
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/kuvalda/pages/expert-page.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/kuvalda_expert@1x.png 600w,
+                         ./images/dist/kuvalda_expert@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/kuvalda_expert@2x.png"
+                  alt="Страница эксперта, интернет-магазин Кувалда"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Страница эксперта, интернет-магазин Кувалда
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/kuvalda/pages/faq-admin/new-theme.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/kuvalda_admin@x1.png 600w,
+                         ./images/dist/kuvalda_admin@x2.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/kuvalda_admin@x2.png"
+                  alt="Панель администратора портала, интернет-магазин Кувалда"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Панель администратора портала, интернет-магазин Кувалда
+            </figcaption>
+          </figure>
+        </a>
+        <a href="http://epic.spb.ru/kuvalda/pages/theme-page-person.html" target="_blank">
+          <figure class="portfolio__item">
+            <img srcset="./images/dist/kuvalda_theme@1x.png 600w,
+                         ./images/dist/kuvalda_theme@2x.png 1200w"
+                 sizes="(max-width: 600px) 600w,
+                        (min-width: 601px) 1200w"
+                  src="./images/dist/kuvalda_theme@2x.png"
+                  alt="Тематическая страница, интернет-магазин Кувалда"
+                  class="portfolio__image">
+            <figcaption class="portfolio__text">
+              Тематическая страница, интернет-магазин Кувалда
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <ul class="social-links">
+        <li class="social__item">
+          <a href="https://vk.com/id62047092" class="social-link" aria-label="Твиттер" target="_blank"><i class="fa fa-vk"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="https://github.com/TalDmitrii" class="social-link" aria-label="Гитхаб" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
+        <li class="social__item">
+          <a href="mailto:talitckikh.dmitrii@mail.ru" class="social-link" aria-label="Написать на почту" target="_blank"><i class="fa fa-envelope-o"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/index.js" charset="utf-8"></script>
+</body>
+</html>
