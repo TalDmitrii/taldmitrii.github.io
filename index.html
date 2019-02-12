@@ -1,144 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Портфолио</title>
-  <link rel="shortcut icon" href="./images/dist/world.png" type="image/png">
-  <script src="https://use.fontawesome.com/715fa6df7e.js"></script>
-  <link rel="stylesheet" href="./styles/dest/style.css">
-</head>
-<body>
-  <header class="header dotted-pattern">
-    <div class="wrapper flex-block">
-      <a href="" class="logo" aria-label="Ссылка на главную страницу">
-        <img src="images/dist/world.png" width="50" height="50" alt="Логотип">
-      </a>
-      <nav class="nav flex-block">
-        <a href="#about" class="nav-item">Обо мне</a>
-        <a href="#skills" class="nav-item">Навыки</a>
-        <a href="#portfolio" class="nav-item">Работы</a>
-      </nav>
-    </div>
-    <div class="hero-text">
-      <h1 class="hero-text__title">Я <i class="fa fa-heart" aria-label="люблю"></i> верстку!</h1>
-      <p class="hero-text__description">Любовь к своему делу помогает мне выполнять работу хорошо, с вниманием к деталям.</p>
-    </div>
-    <div class="scroll">
-      <a href="#about" aria-label="Переход к блоку Обо мне">
-        <span class="scroll__circle">
-          <i class="scroll__icon fa fa-arrow-down"></i>
-        </span>
-        <span class="scroll__pulse"></span>
-      </a>
-    </div>
-  </header>
-  <main class="main">
-    <section class="about diagonal-pattern">
-      <a id="about" aria-hidden="true"></a>
-      <div class="wrapper">
-        <h2 class="section-title">Обо мне</h2>
-        <div class="about-block flex-block">
-          <div class="about-block__text">
-            <p>Привет!</p>
-            <p>Меня зовут Дмитрий Талицких. Я — верстальщик.</p>
-            <p>Я живу в Калининграде, и здесь не так много вакансий на позицию верстальщика. Поэтому я ищу <b>удалённую работу</b>.</p>
-            <p>Прежняя сфера моей деятельности - техническая эксплуатация автомобилей.</p>
-            <p>2 года назад я решил изменить свою жизнь и занялся изучением вёрстки и frontend разработки.</p>
-            <p>Последний год я активно практиковался в HTML Academy. За это время я научился уверенно обращаться с HTML5 и CSS3, препроцессором Less, а также освоил JavaScript на базовом уровне.</p>
-            <p>Серьёзно отношусь к дедлайнам. С пониманием отношусь к авралам, но долгая работа в постоянном напряжении не идет мне на пользу (с кем то бывает иначе?).</p>
-          </div>
-          <img class="about__img" src="images/dist/frontend.jpg" width="500" height="350" alt="фото">
-        </div>
-      </div>
-    </section>
-    <section class="skills">
-      <a id="skills" aria-hidden="true"></a>
-      <div class="wrapper">
-        <h2 class="section-title">Навыки</h2>
-        <div class="skills-block">
-          <div class="skills-block__item">
-            <div class="skill-text">HTML/CSS</div>
-            <div class="skill-progressbar html" data-percent="90%" aria-label="90%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">Адаптивная верстка</div>
-            <div class="skill-progressbar adaptive" data-percent="70%" aria-label="70%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">Доступность</div>
-            <div class="skill-progressbar a11y" data-percent="45%" aria-label="45%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">Less</div>
-            <div class="skill-progressbar sass" data-percent="65%" aria-label="65%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">Git</div>
-            <div class="skill-progressbar git" data-percent="75%" aria-label="75%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">Gulp</div>
-            <div class="skill-progressbar grunt" data-percent="50%" aria-label="50%"></div>
-          </div>
-          <div class="skills-block__item">
-            <div class="skill-text">JavaScript</div>
-            <div class="skill-progressbar js" data-percent="30%" aria-label="30%"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio waves-pattern">
-      <a id="portfolio" aria-hidden="true"></a>
-      <h2 class="section-title">Работы</h2>
-      <div class="portfolio-block">
-        <a href="#" target="_blank">
-          <figure class="portfolio__item">
-            <img src="./images/dist/mishka.jpg" alt="Магазин Мишка" class="portfolio__image">
-            <figcaption class="portfolio__text">
-              Магазин Мишка
-            </figcaption>
-          </figure>
-        </a>
-        <a href="#" target="_blank">
-          <figure class="portfolio__item">
-            <img src="./images/dist/gllacy.jpg" alt="Страница магазина Глейси" class="portfolio__image">
-            <figcaption class="portfolio__text">
-              Страница магазина Глейси
-            </figcaption>
-          </figure>
-        </a>
-        <a href="https://taldmitrii.github.io/artactive/" target="_blank">
-          <figure class="portfolio__item">
-            <img src="./images/dist/mars.jpg" alt="Проект Пантеон" class="portfolio__image">
-            <figcaption class="portfolio__text">
-              Проект Пантеон
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="wrapper">
-      <ul class="social-links">
-        <li class="social__item">
-          <a href="https://vk.com/id62047092" class="social-link" aria-label="Твиттер" target="_blank"><i class="fa fa-vk"></i></a>
-        </li>
-        <li class="social__item">
-          <a href="https://github.com/TalDmitrii" class="social-link" aria-label="Гитхаб" target="_blank"><i class="fa fa-github"></i></a>
-        </li>
-        <li class="social__item">
-          <a href="mailto:talitckikh.dmitrii@mail.ru" class="social-link" aria-label="Написать на почту" target="_blank"><i class="fa fa-envelope-o"></i></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="./scripts/index.js" charset="utf-8"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Заголовок</title>
+  </head>
+  <body class="site-page">
+    <header class="page-header">
+
+    </header>
+    <main class="container">
+
+    </main>
+    <footer class="page-footer">
+
+    </footer>
+    <script src="js/webp-support.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/main-navigation.min.js"></script>
+  </body>
 </html>
