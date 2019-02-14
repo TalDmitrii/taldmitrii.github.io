@@ -1,0 +1,25 @@
+.section-header {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  &::after {
+    width: 45px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: white;
+  }
+}
