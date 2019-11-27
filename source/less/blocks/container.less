@@ -1,0 +1,20 @@
+.container {
+  flex-grow: 1;
+
+  background-image: url("../img/header-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    background-image: url("../img/header-bg-tablet.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    background-image: url("../img/header-bg-desktop.jpg");
+  }
+}
