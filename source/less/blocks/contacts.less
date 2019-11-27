@@ -26,6 +26,19 @@
   min-width: 100px;
 }
 
+.contacts__tel a {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contacts__tel a:hover,
+.contacts__tel a:focus {
+  color: @main-color;
+}
+
 @media (min-width: 580px) {
   .contacts__content-wrapper {
     display: flex;
