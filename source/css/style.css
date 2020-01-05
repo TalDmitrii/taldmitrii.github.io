@@ -1366,6 +1366,18 @@ button.swiper-pagination-bullet {
     height: 86vw;
   }
 }
+.swiper-button-prev {
+  left: -40px;
+}
+.swiper-button-next {
+  right: -40px;
+}
+@media (max-width: 750px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
 .swiper-slide {
   background-position: center;
   background-size: cover;
